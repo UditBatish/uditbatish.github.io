@@ -26,6 +26,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/src/pages/home.css" />
+  <link rel="preload" href="/home/highlights-poster.jpg" as="image" />
   <noscript><style>.headline .w > span, .sub, .socials, .wordmark, .menu-btn { opacity: 1 !important; transform: none !important; filter: none !important; }</style></noscript>
 </head>
 <body class="theme-dark" data-theme-lock>
@@ -74,7 +75,7 @@
     <section id="more" class="more more--reel">
       <div class="reel" role="group" aria-label="Sections">
         <div class="panel panel--video is-hl">
-          <div class="panel-media"><video src="/home/highlights.mp4" poster="/home/highlights-poster.jpg" autoplay muted loop playsinline data-hover aria-hidden="true"></video></div>
+          <div class="panel-media"><video src="/home/highlights.mp4" poster="/home/highlights-poster.jpg" preload="auto" autoplay muted loop playsinline data-hover aria-hidden="true"></video></div>
         </div>
 
         <a class="panel" href="/experience/">

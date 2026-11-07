@@ -360,6 +360,18 @@ body:not([data-theme-lock]) .wordmark, body:not([data-theme-lock]) .menu-btn, bo
 .hero--home .hero-text { top: 53%; }
 /* home: a short about note under the reel, as wide as the reel */
 .about { margin: clamp(36px, 4vw, 56px) var(--pad) 0; }
+/* the highlights card shows its first frame at once, then the video fades in over it when it
+   actually starts playing (no black box or jump while it loads) */
+.panel--video .panel-media { background: #0b0b0b; }
+.panel--video .panel-media::before {   /* the first frame, greyed like the video until hovered */
+  content: ''; position: absolute; inset: 0;
+  background: url('/home/highlights-poster.jpg') center / cover no-repeat;
+  filter: grayscale(80%); transition: filter 0.5s;
+}
+.panel--video:hover .panel-media::before { filter: none; }
+@media (max-width: 991px) { .panel--video .panel-media::before { filter: none; } }
+.panel--video video { position: relative; opacity: 0; transition: opacity 0.6s var(--ease), filter 0.5s; }
+.panel--video video.is-playing { opacity: 1; }
 @media (min-width: 1280px) {   /* same edges as the reel, and the footer under it too */
   .about { margin-left: 42.56px; margin-right: 21.28px; }
   .more--reel .foot { max-width: none; width: auto; margin-left: 42.56px; margin-right: 21.28px; }
