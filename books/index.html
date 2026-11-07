@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Bookshelf · Udit Batish</title>
+  <meta name="robots" content="noai, noimageai" />
+  <meta name="tdm-reservation" content="1" />
+  <meta name="description" content="Books Udit Batish has read, on a virtual shelf." />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="canonical" href="https://uditbatish.github.io/books/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Udit Batish" />
+  <meta property="og:title" content="Bookshelf · Udit Batish" />
+  <meta property="og:description" content="Books Udit Batish has read, on a virtual shelf." />
+  <meta property="og:url" content="https://uditbatish.github.io/books/" />
+  <meta property="og:image" content="https://uditbatish.github.io/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Hi, I'm Udit. Early-stage investor at Z21 Ventures." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#1d2457" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="/src/books.css" />
+  <noscript><style>.headline .w > span, .sub, .socials, .wordmark, .menu-btn { opacity: 1 !important; transform: none !important; filter: none !important; }</style></noscript>
+</head>
+<body class="page-books">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.body.classList.toggle('theme-dark',t==='dark')}catch(e){}</script>
+  <header class="top">
+    <a class="wordmark wordmark--icon" href="/" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.5 9v10.5h4.5v-6h4v6h4.5V9"/></svg></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+      <span class="menu-label">Menu</span>
+      <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero hero--band">
+      <canvas id="field" aria-hidden="true"></canvas>
+      <div class="hero-text">
+        <h1 class="headline" aria-label="Bookshelf.">
+          <span class="w serif"><span>Bookshelf.</span></span>
+        </h1>
+        <p class="sub">What I've been reading. Pick one off the shelf.</p>
+      </div>
+    </section>
+
+    <section class="library" aria-label="Bookshelf">
+      <div class="bookcase">
+        <div class="shelves"></div>
+      </div>
+    </section>
+
+    <footer class="foot foot--page"><span>© 2026 Udit Batish</span></footer>
+  </main>
+
+  <!-- Book detail: the book slides off the shelf into this -->
+  <div class="book-modal" role="dialog" aria-modal="true" aria-labelledby="bm-title" hidden>
+    <div class="bm-backdrop" data-close></div>
+    <article class="bm-card">
+      <button class="bm-close" data-close aria-label="Close">×</button>
+      <div class="bm-stage">
+        <div class="book3d bm-book">
+          <div class="b-cover"><img alt="" /></div>
+          <div class="b-spine"></div>
+          <div class="b-pages"></div>
+          <div class="b-back"></div>
+        </div>
+      </div>
+      <div class="bm-info" aria-live="polite">
+        <h2 id="bm-title" class="bm-title"></h2>
+        <p class="bm-subtitle"></p>
+        <p class="bm-author"></p>
+        <p class="bm-note"></p>
+        <div class="bm-actions">
+          <a class="bm-link" target="_blank" rel="noopener">Find on Goodreads ↗</a>
+          <div class="bm-nav">
+            <button class="bm-prev" aria-label="Previous book">←</button>
+            <button class="bm-next" aria-label="Next book">→</button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="scrim"></div>
+  <nav id="menu" class="menu" aria-hidden="true">
+    <ol>
+      <li><a href="/experience/"><span class="n">01</span><span class="t">Experience</span><span class="arr">→</span></a></li>
+      <li><a href="https://substack.com/@uditbatish/posts" target="_blank" rel="noopener"><span class="n">02</span><span class="t">Articles</span><span class="arr">↗</span></a></li>
+      <li><a href="/books/" aria-current="page"><span class="n">03</span><span class="t">Bookshelf</span><span class="arr">→</span></a></li>
+      <li><a href="/photography/"><span class="n">04</span><span class="t">Photography</span><span class="arr">→</span></a></li>
+      <li><a href="/running/"><span class="n">05</span><span class="t">Running</span><span class="arr">→</span></a></li>
+    </ol>
+  </nav>
+
+  <script type="module" src="/src/books.js"></script>
+</body>
+</html>

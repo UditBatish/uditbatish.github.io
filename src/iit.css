@@ -1,0 +1,60 @@
+/* ===== IIT Delhi entry ===== */
+
+/* photo cards: picture, title, year, a line or two */
+.pc { margin: 0; }
+.pc .ph, .pc img { aspect-ratio: 4 / 3; width: 100%; object-fit: cover; }
+.pc img { display: block; }
+.pc .ph span { padding: 0 12px; text-align: center; line-height: 1.6; }
+.pc figcaption { margin-top: 14px; }
+.pc h3 { font-size: 17px; font-weight: 600; line-height: 1.35; color: var(--ink); }
+.e-block .pc p { margin-top: 6px; font-size: 15px; line-height: 1.6; }
+.e-block .pc .pc-yr { margin-top: 2px; font-size: 12px; letter-spacing: 0.5px; color: var(--ink-3); }
+.pc--big .ph, .pc--big img { aspect-ratio: 4 / 5; }
+.pc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 20px; margin-top: 24px; }
+
+/* achievements: the scholarship as a big photo, the rest listed beside it */
+.ach { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 24px; }
+/* the list spreads over the card's full height so both columns start and end together */
+.e-block .ach-list { display: flex; flex-direction: column; justify-content: space-between; }
+.e-block .ach-list { margin-top: 0; }
+.e-block .ach-list li { padding-left: 0; }
+.e-block .ach-list li::before { display: none; }
+.e-block .ach-list li + li { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); }
+.ach-list .yr { margin-left: 0 !important; display: block; margin-top: 2px; }
+.e-block .ach-list li .d { margin-top: 6px; font-size: 15px; line-height: 1.6; }
+
+/* case competitions: a medal scoreboard */
+.e-block .medals { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 22px; }
+.e-block .medals li { max-width: none; padding: 14px 16px 14px 52px; background: var(--tint); }
+.e-block .medals li + li { margin-top: 0; }
+.e-block .medals li::before { display: none; }
+.medals i {
+  position: absolute; left: 16px; top: 15px;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.55) 0 18%, transparent 20%), var(--c);
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.18);
+}
+.m-g { --c: #e0b04a; } .m-s { --c: #c9cdd3; } .m-b { --c: #c07a4c; }
+.medals b { display: block; font-size: 15px; font-weight: 600; line-height: 1.35; color: var(--ink); }
+.medals span { display: block; margin-top: 2px; font-size: 13px; color: var(--ink-3); }
+.e-block .medals .m-more { grid-column: 1 / -1; display: flex; align-items: center; padding-left: 16px; background: none; border: 0; color: var(--ink-3); }
+.medals .m-more b { font-weight: 500; color: var(--ink-2); }
+
+/* the closing photo strip: small photos drifting left, pausing on hover */
+.drift {
+  margin-top: 72px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+.drift-track { display: flex; width: max-content; animation: strip-drift 80s linear infinite; }
+@media (hover: hover) { .drift:hover .drift-track { animation-play-state: paused; } }
+.drift figure { flex: none; height: 132px; margin: 0 10px 0 0; }   /* margin, not gap, so -50% lands exactly */
+.drift img { display: block; height: 100%; width: auto; }
+@keyframes strip-drift { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .drift-track { animation: none; } }
+
+@media (max-width: 640px) {
+  .ach, .pc-grid, .e-block .medals { grid-template-columns: 1fr; }
+  .drift figure { height: 104px; }
+}

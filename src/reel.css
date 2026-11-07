@@ -1,0 +1,119 @@
+/* ---------- The reel ----------
+   A row of panels after cristianoronaldo.com, used on the home page and on /experience/. */
+/* ===== the reel =====
+   Measured from cristianoronaldo.com at 1440px: row 584px tall, 10.56px gaps,
+   42.56px left / 21.28px right margins. Every panel flex 1 at 70% height; the
+   highlighted one flex 2 at 100%. flex and height ease over 0.3s. Media sits at
+   80% greyscale and goes to colour over 0.5s on hover. Text shows only on the
+   highlighted panel: in after a 0.3s delay, out in 0.1s. */
+.reel {
+  display: flex;
+  align-items: center;
+  gap: 10.56px;
+  height: clamp(460px, 65vh, 584px);
+  margin: 8px 21.28px 0 42.56px;
+}
+
+.panel {
+  position: relative;
+  flex: 1 1 0%;
+  min-width: 0;
+  height: 100%;
+  max-height: 70%;
+  overflow: hidden;
+  background: #151515;
+  color: #fff;
+  transition: flex 0.3s, max-height 0.3s;
+}
+.panel.is-hl { flex: 2 1 0%; max-height: 100%; }
+
+.panel-media { position: absolute; inset: 0; }
+.panel-media img,
+.panel-media video,
+.panel-media .panel-fill {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(80%);
+  transition: filter 0.5s;
+}
+.panel:hover .panel-media img,
+.panel:hover .panel-media video,
+.panel:hover .panel-media .panel-fill,
+.panel:focus-visible .panel-media > * { filter: grayscale(0%); }
+
+/* bottom shade so white text reads on anything */
+.panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+}
+
+.panel-text {
+  position: absolute;
+  left: 40px;
+  bottom: 60px;
+  width: calc(100% - 80px);
+  min-width: 220px;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+.panel.is-hl .panel-text { opacity: 1; transition: opacity 0.3s linear 0.3s; }
+
+.p-title {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+.p-title b { font-weight: 700; }
+.p-desc { margin-top: 5px; max-width: 34ch; font-size: 14px; line-height: 22px; color: rgba(255, 255, 255, 0.9); }
+.p-link {
+  display: inline-block;
+  margin-top: 21px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.1s;
+}
+a.panel:hover .p-link { color: #fff; }   /* stays white on hover */
+
+.panel:focus-visible { outline: 2px solid #fff; outline-offset: -2px; }
+
+/* panels waiting for a photo */
+.panel-fill--dawn { background: linear-gradient(160deg, #ffbf9b 0%, #f2734f 45%, #1d2457 100%); }
+.panel-fill--dusk { background: linear-gradient(160deg, #3f6fd8 0%, #1d2457 55%, #0d1030 100%); }
+.panel-fill--ember { background: linear-gradient(160deg, #f2734f 0%, #6e2a1c 60%, #1a0d08 100%); }
+.panel-fill--oak { background: var(--grain-h), linear-gradient(180deg, #b8814e, #c48d59 30%, #8a5a30); }
+
+/* below 1280px the reel becomes a swipeable row, like the reference */
+@media (max-width: 1279px) {
+  .reel {
+    height: auto;
+    margin: 8px 0 0;
+    padding: 0 var(--pad) 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 var(--pad);
+    scrollbar-width: none;
+  }
+  .reel::-webkit-scrollbar { display: none; }
+  .panel, .panel.is-hl { flex: 0 0 calc(33.3% - 7px); height: 560px; max-height: none; scroll-snap-align: start; }
+  .panel-text, .panel.is-hl .panel-text { opacity: 1; transition: none; left: 28px; width: calc(100% - 56px); min-width: 0; bottom: 40px; }
+}
+@media (max-width: 991px) {
+  .panel, .panel.is-hl { flex-basis: calc(50% - 6px); height: 520px; }
+  .panel-media > * { filter: none !important; }
+}
+@media (max-width: 767px) {
+  .panel, .panel.is-hl { flex-basis: 84%; height: auto; aspect-ratio: 4 / 5; }   /* phones: squarer cards */
+  .p-link { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .panel, .panel-text, .panel-media > * { transition: none !important; }
+}

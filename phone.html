@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phone preview</title>
+  <meta name="robots" content="noindex" />
+  <!-- Dev-only: shows the site inside an iPhone-sized frame. Not in vite.config.js, so it is
+       never built or published. Open http://localhost:5180/phone.html while the dev server runs. -->
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #15161c; color: #e9e9ee; font: 14px/1.4 -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; display: flex; gap: 40px; justify-content: center; align-items: flex-start; padding: 32px 24px; }
+    .side { width: 230px; position: sticky; top: 32px; }
+    h1 { margin: 0 0 4px; font-size: 18px; font-weight: 600; }
+    .hint { margin: 0 0 22px; color: #9a9cab; font-size: 13px; }
+    h2 { margin: 22px 0 8px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #8a8d99; font-weight: 600; }
+    .list { display: flex; flex-direction: column; gap: 4px; }
+    button { all: unset; cursor: pointer; padding: 8px 12px; border-radius: 8px; color: #d6d7de; }
+    button:hover { background: #22242d; }
+    button[aria-pressed="true"] { background: #2d3040; color: #fff; }
+    .phone { position: relative; padding: 14px; border-radius: 58px; background: #000; box-shadow: 0 0 0 2px #2c2d35, 0 30px 80px rgba(0, 0, 0, 0.6); }
+    .phone::before { content: ''; position: absolute; top: 25px; left: 50%; width: 120px; height: 34px; margin-left: -60px; border-radius: 20px; background: #000; z-index: 2; pointer-events: none; }
+    .screen { display: block; border: 0; border-radius: 44px; background: #fff; }
+    .size { margin-top: 10px; text-align: center; color: #8a8d99; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <aside class="side">
+    <h1>Phone preview</h1>
+    <p class="hint">The site at iPhone size. Scroll inside the phone. Click links in it as normal.</p>
+    <h2>Page</h2>
+    <div class="list" id="pages">
+      <button data-url="/">Home</button>
+      <button data-url="/experience/">Experience</button>
+      <button data-url="/experience/?open=/experience/z21/">· Z21 Ventures</button>
+      <button data-url="/experience/?open=/experience/nri/">· Nomura (NRI)</button>
+      <button data-url="/experience/?open=/experience/iit-delhi/">· IIT Delhi</button>
+      <button data-url="/books/">Bookshelf</button>
+      <button data-url="/photography/">Photography</button>
+      <button data-url="/running/">Running</button>
+    </div>
+    <h2>iPhone</h2>
+    <div class="list" id="sizes">
+      <button data-w="375" data-h="667">iPhone SE (375 × 667)</button>
+      <button data-w="393" data-h="852">iPhone 15 / 16 (393 × 852)</button>
+      <button data-w="430" data-h="932">iPhone Pro Max (430 × 932)</button>
+    </div>
+  </aside>
+  <div>
+    <div class="phone"><iframe class="screen" title="Site at phone size"></iframe></div>
+    <p class="size"></p>
+  </div>
+  <script>
+    const frame = document.querySelector('iframe');
+    const label = document.querySelector('.size');
+    const state = { url: '/', w: 393, h: 852 };
+    try { Object.assign(state, JSON.parse(localStorage.getItem('phone-preview') || '{}')); } catch {}
+    const phone = document.querySelector('.phone');
+    // shrink the whole phone to fit a laptop screen (the page inside still lays out at full size)
+    function fit() {
+      const k = Math.min(1, (innerHeight - 90) / (state.h + 28));
+      phone.style.transform = `scale(${k})`;
+      phone.style.transformOrigin = 'top center';
+      phone.parentElement.style.height = `${(state.h + 28) * k + 40}px`;
+    }
+    addEventListener('resize', fit);
+    function render(reload) {
+      frame.width = state.w; frame.height = state.h;
+      fit();
+      label.textContent = `${state.w} × ${state.h}`;
+      if (reload) frame.src = state.url;
+      document.querySelectorAll('#pages button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.url === state.url)));
+      document.querySelectorAll('#sizes button').forEach((b) => b.setAttribute('aria-pressed', String(+b.dataset.w === state.w)));
+      try { localStorage.setItem('phone-preview', JSON.stringify(state)); } catch {}
+    }
+    document.querySelectorAll('#pages button').forEach((b) => b.addEventListener('click', () => { state.url = b.dataset.url; render(true); }));
+    // a new size reloads the page too, so it lays itself out for that screen from the start
+    document.querySelectorAll('#sizes button').forEach((b) => b.addEventListener('click', () => { state.w = +b.dataset.w; state.h = +b.dataset.h; render(true); }));
+    render(true);
+  </script>
+</body>
+</html>
