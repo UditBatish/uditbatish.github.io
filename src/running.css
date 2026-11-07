@@ -400,9 +400,14 @@
 @keyframes film { to { transform: translateX(-50%); } }
 
 @media (max-width: 760px) {
-  .run-hero { height: auto; min-height: 0; aspect-ratio: 3 / 2; }   /* phones: a short, wide crop of the video so the text starts sooner */
-  .run-intro { padding-top: 36px; }
-  .run-hero .hero-text { bottom: 22px; }
+  /* phones: the video is a short strip, and the headline sits under it on the page instead of
+     over it, so the text starts right away (laptops keep the full-screen video) */
+  .run-hero { height: auto; min-height: 0; background: none; overflow: visible; }
+  .run-hero::after { display: none; }
+  .run-hero-video { position: relative; inset: auto; display: block; height: auto; aspect-ratio: 2.6 / 1; }
+  .run-hero .hero-text { position: static; padding: 22px var(--pad) 0; }
+  .run-hero .headline { color: var(--ink); font-size: clamp(38px, 11vw, 50px); max-width: none; }
+  .run-intro { padding-top: 32px; }
   .run-intro { grid-template-columns: 1fr; }
   .runner { left: 30%; width: 112px; margin-left: -56px; }   /* smaller, so it clears the cards */
   .road-stage { min-height: 0; }
