@@ -17,7 +17,10 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+/* No sideways panning on iPhone: Safari ignores overflow-x on <body> alone, and the closed menu
+   waits just off the right edge. hidden on <html> clips the viewport; clip (not hidden) on <body>
+   keeps <body> from becoming a scroll box, which would break the sticky running stage. */
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; overflow-x: hidden; }
 a, button { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
 
 body {
@@ -25,7 +28,7 @@ body {
   color: var(--ink);
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* ---------- dark theme: the default on /experience/, anywhere via the switch ---------- */
