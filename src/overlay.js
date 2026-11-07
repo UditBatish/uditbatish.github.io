@@ -78,7 +78,9 @@ async function open(link, { push = true } = {}) {
 
   dlg.showModal();
   lockScroll(true);
-  dlg.querySelector('.ov-close').focus({ preventScroll: true });
+  // focus the panel itself, not the close button: Safari would ring the button on every open
+  dlg.tabIndex = -1;
+  dlg.focus({ preventScroll: true });
   if (push) { history.pushState({ overlay: url, kind }, '', url); pushed = true; }
   document.title = title;
 }

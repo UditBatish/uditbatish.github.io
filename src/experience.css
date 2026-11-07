@@ -15,6 +15,7 @@
   overscroll-behavior: contain;
 }
 .ov::backdrop { background: rgba(0, 0, 0, 0.6); }
+.ov:focus { outline: none; }
 
 /* work: a page rising from below; the reel sinks back */
 .ov--work {
@@ -210,6 +211,15 @@ html:has(.lb[open]) { overflow: hidden; }
   .ov--side .e-head { margin-top: -72px; }   /* phones: the title sits on paper, not on the photo */
   .e-hero::after { background: linear-gradient(to top, var(--paper) 0%, var(--paper) 10%, transparent 70%); }
   .lb .ov-close { position: fixed; top: max(14px, env(safe-area-inset-top)); right: 14px; }
+  /* phones: the close button lives in a slim frosted bar at the top, like an iOS sheet, so the
+     page scrolls under the bar instead of under a floating button */
+  .ov-bar { height: 56px; margin-bottom: -56px; padding-top: env(safe-area-inset-top); box-sizing: content-box;
+    background: color-mix(in srgb, var(--paper) 72%, transparent);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4); }
+  .ov-bar > * { margin-top: 0; }
+  .ov-close { width: 40px; height: 40px; font-size: 22px; }
+  .ov-close::after { content: ''; position: absolute; inset: -4px; }   /* still a 48px touch target */
+  .ov-close { position: relative; }
   .e-items > li { grid-template-columns: 34px 1fr; }
   .e-stats { grid-template-columns: 1fr 1fr; }
   .entry-back { top: 88px; }

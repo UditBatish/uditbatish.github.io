@@ -1,0 +1,6 @@
+/* One stylesheet per page, in this order, so page rules override the shared ones.
+   (Linked separately, the build put the shared style.css last and it won ties.) */
+@import '../style.css';
+@import '../reel.css';
+@import '../experience.css';
+@import '../iit.css';
