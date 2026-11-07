@@ -1,6 +1,6 @@
-// Light/dark theme, shared by every page. A page's own default is in its markup
-// (body.theme-dark on /experience/); a choice made with the switch is remembered and
-// applied before first paint by the one-line script at the top of each <body>.
+// Light/dark theme, shared by every page. Every page starts dark (body.theme-dark in its
+// markup); a choice made with the switch is remembered and applied before first paint by the
+// one-line script at the top of each <body>. The home page is always dark (data-theme-lock).
 const KEY = 'theme';
 
 export const isDark = () => document.body.classList.contains('theme-dark');
