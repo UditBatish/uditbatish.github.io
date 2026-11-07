@@ -19,13 +19,15 @@ export function initReel(reel) {
     reel.querySelectorAll('video[data-hover]').forEach((v) => { if (v.paused) { v.preload = 'auto'; v.load(); } });
   };
   reel.addEventListener('pointerenter', warm);
-  // touch screens have no hover: a card's video plays while most of the card is on screen
+  // touch screens have no hover: a card's video plays while it's on screen and pauses once it's
+  // fully off screen (pausing below some visible share stopped the autoplay at page load)
   if (!still && !matchMedia('(hover: hover)').matches && 'IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => entries.forEach((e) => {
       const v = e.target.querySelector('video[data-hover]');
       if (!v) return;
-      if (e.isIntersecting) { v.preload = 'auto'; v.play().catch(() => {}); } else v.pause();
-    }), { threshold: 0.6 });
+      if (e.intersectionRatio >= 0.25) { v.preload = 'auto'; v.play().catch(() => {}); }
+      else if (!e.isIntersecting) v.pause();
+    }), { threshold: [0, 0.25] });
     panels.forEach((p) => io.observe(p));
   }
   panels.forEach((p) => {

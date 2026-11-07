@@ -23,7 +23,8 @@ export function initChrome({ lightFrom = () => 0 } = {}) {
     menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     menu.setAttribute('aria-hidden', String(!open));
     if (main) main.inert = open;   // the page behind the open menu is out of reach
-    if (open) menu.querySelector('a').focus({ preventScroll: true });
+    // focus the panel, not its first link: Safari would underline that link on every open
+    if (open) { menu.tabIndex = -1; menu.focus({ preventScroll: true }); }
     else if (hadFocus) menuBtn.focus({ preventScroll: true });   // don't leave focus on a link that's disappearing
   }
   menuBtn.addEventListener('click', () => setMenu(!document.body.classList.contains('menu-open')));
