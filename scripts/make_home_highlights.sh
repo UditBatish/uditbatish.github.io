@@ -48,4 +48,6 @@ for ((k=0; k<i; k++)); do fc+="[v$k]"; done
 fc+="concat=n=$i:v=1:a=0,format=yuv420p[out]"
 ffmpeg -v error -y "${args[@]}" -filter_complex "$fc" -map "[out]" -an -c:v libx264 -preset slow -crf 30 -g 30 -movflags +faststart "$OUT/highlights.mp4"   # small + a keyframe every second, so it starts fast
 ffmpeg -v error -y -i "$OUT/highlights.mp4" -frames:v 1 -q:v 4 "$OUT/highlights-poster.jpg"   # the very first frame, so poster → video is seamless
+# phones get a smaller cut (the card is narrower there): about 40% of the size, so it starts sooner
+ffmpeg -v error -y -i "$OUT/highlights.mp4" -vf "scale=480:600:flags=lanczos" -an -c:v libx264 -preset slow -crf 31 -g 30 -profile:v main -movflags +faststart "$OUT/highlights-sm.mp4"
 echo "wrote public/home/highlights.mp4 ($(ffprobe -v error -show_entries format=duration -of csv=p=0 "$OUT/highlights.mp4")s)"
