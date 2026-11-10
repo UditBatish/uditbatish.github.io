@@ -1,0 +1,1676 @@
+{
+ "packs": [
+  {
+   "id": "classic",
+   "name": "Classic",
+   "emoji": "🎲",
+   "blurb": "Everyday stuff",
+   "pairs": [
+    [
+     "Tea",
+     "Coffee"
+    ],
+    [
+     "Pillow",
+     "Blanket"
+    ],
+    [
+     "Pen",
+     "Pencil"
+    ],
+    [
+     "Cat",
+     "Dog"
+    ],
+    [
+     "Spoon",
+     "Fork"
+    ],
+    [
+     "Shoes",
+     "Slippers"
+    ],
+    [
+     "Lion",
+     "Tiger"
+    ],
+    [
+     "Rocket",
+     "Aeroplane"
+    ],
+    [
+     "Rain",
+     "Snow"
+    ],
+    [
+     "Guitar",
+     "Violin"
+    ],
+    [
+     "Doctor",
+     "Nurse"
+    ],
+    [
+     "Bus",
+     "Train"
+    ],
+    [
+     "Mirror",
+     "Window"
+    ],
+    [
+     "Chair",
+     "Bench"
+    ],
+    [
+     "Watch",
+     "Bracelet"
+    ],
+    [
+     "Umbrella",
+     "Raincoat"
+    ],
+    [
+     "Toothbrush",
+     "Comb"
+    ],
+    [
+     "Fridge",
+     "Microwave"
+    ],
+    [
+     "Lift",
+     "Escalator"
+    ],
+    [
+     "River",
+     "Lake"
+    ],
+    [
+     "Mountain",
+     "Volcano"
+    ],
+    [
+     "Beach",
+     "Desert"
+    ],
+    [
+     "Hat",
+     "Helmet"
+    ],
+    [
+     "Candle",
+     "Torch"
+    ],
+    [
+     "Book",
+     "Magazine"
+    ],
+    [
+     "Football",
+     "Basketball"
+    ],
+    [
+     "Butterfly",
+     "Moth"
+    ],
+    [
+     "Crow",
+     "Pigeon"
+    ],
+    [
+     "Dolphin",
+     "Shark"
+    ],
+    [
+     "Horse",
+     "Donkey"
+    ],
+    [
+     "Snake",
+     "Lizard"
+    ],
+    [
+     "Mosquito",
+     "Fly"
+    ],
+    [
+     "Teacher",
+     "Principal"
+    ],
+    [
+     "Police",
+     "Soldier"
+    ],
+    [
+     "Key",
+     "Lock"
+    ],
+    [
+     "Scissors",
+     "Knife"
+    ],
+    [
+     "Bed",
+     "Sofa"
+    ],
+    [
+     "Birthday",
+     "Wedding"
+    ],
+    [
+     "Ghost",
+     "Zombie"
+    ],
+    [
+     "Soap",
+     "Shampoo"
+    ],
+    [
+     "Towel",
+     "Bedsheet"
+    ],
+    [
+     "Spectacles",
+     "Sunglasses"
+    ],
+    [
+     "Ring",
+     "Necklace"
+    ],
+    [
+     "Jeans",
+     "Pyjamas"
+    ],
+    [
+     "Hoodie",
+     "Jacket"
+    ],
+    [
+     "Batman",
+     "Superman"
+    ],
+    [
+     "Magician",
+     "Clown"
+    ],
+    [
+     "Robot",
+     "Alien"
+    ],
+    [
+     "Dragon",
+     "Dinosaur"
+    ],
+    [
+     "Camera",
+     "Binoculars"
+    ],
+    [
+     "Map",
+     "Compass"
+    ],
+    [
+     "Balloon",
+     "Kite"
+    ],
+    [
+     "Rainbow",
+     "Fireworks"
+    ],
+    [
+     "Painting",
+     "Photograph"
+    ],
+    [
+     "Hammer",
+     "Screwdriver"
+    ],
+    [
+     "Lipstick",
+     "Nail polish"
+    ],
+    [
+     "Bicycle",
+     "Skateboard"
+    ],
+    [
+     "Swimming pool",
+     "Bathtub"
+    ],
+    [
+     "Zoo",
+     "Circus"
+    ],
+    [
+     "Broom",
+     "Mop"
+    ],
+    [
+     "Ant",
+     "Cockroach"
+    ],
+    [
+     "Pirate",
+     "Ninja"
+    ],
+    [
+     "Vampire",
+     "Witch"
+    ],
+    [
+     "Queen",
+     "Princess"
+    ],
+    [
+     "Ladder",
+     "Stairs"
+    ],
+    [
+     "Monkey",
+     "Gorilla"
+    ],
+    [
+     "Peacock",
+     "Parrot"
+    ],
+    [
+     "Earphones",
+     "Headphones"
+    ],
+    [
+     "Elephant",
+     "Rhino"
+    ]
+   ]
+  },
+  {
+   "id": "desi",
+   "name": "Desi",
+   "emoji": "🛺",
+   "blurb": "Ghar ki baat",
+   "pairs": [
+    [
+     "Samosa",
+     "Kachori"
+    ],
+    [
+     "Pani puri",
+     "Bhel puri"
+    ],
+    [
+     "Vada pav",
+     "Pav bhaji"
+    ],
+    [
+     "Chole bhature",
+     "Rajma chawal"
+    ],
+    [
+     "Dosa",
+     "Uttapam"
+    ],
+    [
+     "Idli",
+     "Dhokla"
+    ],
+    [
+     "Poha",
+     "Upma"
+    ],
+    [
+     "Rasgulla",
+     "Gulab jamun"
+    ],
+    [
+     "Jalebi",
+     "Laddoo"
+    ],
+    [
+     "Halwa",
+     "Kheer"
+    ],
+    [
+     "Kulfi",
+     "Ice cream"
+    ],
+    [
+     "Ghee",
+     "Butter"
+    ],
+    [
+     "Pickle",
+     "Chutney"
+    ],
+    [
+     "Papad",
+     "Chips"
+    ],
+    [
+     "Roti",
+     "Naan"
+    ],
+    [
+     "Biryani",
+     "Pulao"
+    ],
+    [
+     "Pakora",
+     "Cutlet"
+    ],
+    [
+     "Tiffin",
+     "Thali"
+    ],
+    [
+     "Dhaba",
+     "Café"
+    ],
+    [
+     "Nimbu pani",
+     "Sugarcane juice"
+    ],
+    [
+     "Lassi",
+     "Milkshake"
+    ],
+    [
+     "Parle-G",
+     "Oreo"
+    ],
+    [
+     "Paan",
+     "Saunf"
+    ],
+    [
+     "Auto",
+     "Cab"
+    ],
+    [
+     "Scooty",
+     "Bike"
+    ],
+    [
+     "Speed breaker",
+     "Pothole"
+    ],
+    [
+     "Toll plaza",
+     "Petrol pump"
+    ],
+    [
+     "Kirana store",
+     "Supermarket"
+    ],
+    [
+     "Aadhaar card",
+     "PAN card"
+    ],
+    [
+     "Bucket",
+     "Mug"
+    ],
+    [
+     "Cooler",
+     "AC"
+    ],
+    [
+     "Inverter",
+     "Generator"
+    ],
+    [
+     "Geyser",
+     "Immersion rod"
+    ],
+    [
+     "Pressure cooker",
+     "Kadhai"
+    ],
+    [
+     "Matka",
+     "Water filter"
+    ],
+    [
+     "Charpai",
+     "Hammock"
+    ],
+    [
+     "Kurta",
+     "Sherwani"
+    ],
+    [
+     "Saree",
+     "Lehenga"
+    ],
+    [
+     "Rangoli",
+     "Mehendi"
+    ],
+    [
+     "Sangeet",
+     "Haldi"
+    ],
+    [
+     "Dhol",
+     "DJ"
+    ],
+    [
+     "Rakhi",
+     "Friendship band"
+    ],
+    [
+     "Garba",
+     "Bhangra"
+    ],
+    [
+     "Ludo",
+     "Carrom"
+    ],
+    [
+     "Antakshari",
+     "Dumb charades"
+    ],
+    [
+     "Doraemon",
+     "Shinchan"
+    ],
+    [
+     "Relatives",
+     "Neighbours"
+    ],
+    [
+     "Mama",
+     "Chacha"
+    ],
+    [
+     "Report card",
+     "PTM"
+    ],
+    [
+     "Sabziwala",
+     "Doodhwala"
+    ],
+    [
+     "Pogo",
+     "Cartoon Network"
+    ],
+    [
+     "Fevicol",
+     "Fevikwik"
+    ],
+    [
+     "Rooh Afza",
+     "Tang"
+    ],
+    [
+     "Kho kho",
+     "Kabaddi"
+    ],
+    [
+     "Kulhad",
+     "Steel glass"
+    ],
+    [
+     "Tambola",
+     "Musical chairs"
+    ],
+    [
+     "Hajmola",
+     "Eno"
+    ],
+    [
+     "Phupha",
+     "Jijaji"
+    ]
+   ]
+  },
+  {
+   "id": "filmi",
+   "name": "Bollywood & Cricket",
+   "emoji": "🏏",
+   "blurb": "Filmy and sporty",
+   "pairs": [
+    [
+     "Six",
+     "Four"
+    ],
+    [
+     "Bouncer",
+     "Yorker"
+    ],
+    [
+     "Run out",
+     "Stumped"
+    ],
+    [
+     "Wide",
+     "No ball"
+    ],
+    [
+     "Spinner",
+     "Fast bowler"
+    ],
+    [
+     "Test match",
+     "T20"
+    ],
+    [
+     "IPL",
+     "World Cup"
+    ],
+    [
+     "Super over",
+     "Free hit"
+    ],
+    [
+     "Gully cricket",
+     "Box cricket"
+    ],
+    [
+     "Virat Kohli",
+     "Rohit Sharma"
+    ],
+    [
+     "Sachin",
+     "Dhoni"
+    ],
+    [
+     "CSK",
+     "RCB"
+    ],
+    [
+     "Title track",
+     "Item song"
+    ],
+    [
+     "Trailer",
+     "Poster"
+    ],
+    [
+     "Sequel",
+     "Remake"
+    ],
+    [
+     "Interval",
+     "Climax"
+    ],
+    [
+     "Biopic",
+     "Documentary"
+    ],
+    [
+     "Cameo",
+     "Debut"
+    ],
+    [
+     "Box office",
+     "OTT release"
+    ],
+    [
+     "Director",
+     "Producer"
+    ],
+    [
+     "Multiplex",
+     "Single screen"
+    ],
+    [
+     "Sholay",
+     "DDLJ"
+    ],
+    [
+     "3 Idiots",
+     "PK"
+    ],
+    [
+     "Dangal",
+     "Sultan"
+    ],
+    [
+     "Lagaan",
+     "Chak De"
+    ],
+    [
+     "YJHD",
+     "ZNMD"
+    ],
+    [
+     "Golmaal",
+     "Dhamaal"
+    ],
+    [
+     "Hera Pheri",
+     "Welcome"
+    ],
+    [
+     "Dhoom",
+     "Race"
+    ],
+    [
+     "Krrish",
+     "Ra.One"
+    ],
+    [
+     "Baahubali",
+     "RRR"
+    ],
+    [
+     "KGF",
+     "Pushpa"
+    ],
+    [
+     "Jawan",
+     "Pathaan"
+    ],
+    [
+     "Stree",
+     "Bhool Bhulaiyaa"
+    ],
+    [
+     "Shah Rukh",
+     "Salman"
+    ],
+    [
+     "Ranbir",
+     "Ranveer"
+    ],
+    [
+     "Deepika",
+     "Priyanka"
+    ],
+    [
+     "Akshay Kumar",
+     "Ajay Devgn"
+    ],
+    [
+     "Honey Singh",
+     "Badshah"
+    ],
+    [
+     "KBC",
+     "Bigg Boss"
+    ],
+    [
+     "Arijit Singh",
+     "Diljit Dosanjh"
+    ],
+    [
+     "Alia Bhatt",
+     "Katrina Kaif"
+    ],
+    [
+     "Kartik Aaryan",
+     "Varun Dhawan"
+    ],
+    [
+     "Bumrah",
+     "Hardik Pandya"
+    ],
+    [
+     "Panchayat",
+     "Kota Factory"
+    ],
+    [
+     "Mirzapur",
+     "Sacred Games"
+    ],
+    [
+     "Roadies",
+     "Splitsvilla"
+    ],
+    [
+     "DRS",
+     "Third umpire"
+    ],
+    [
+     "Rockstar",
+     "Aashiqui 2"
+    ],
+    [
+     "Commentator",
+     "Cheerleader"
+    ]
+   ]
+  },
+  {
+   "id": "internet",
+   "name": "Internet & Apps",
+   "emoji": "📱",
+   "blurb": "Extremely online",
+   "pairs": [
+    [
+     "Instagram",
+     "Snapchat"
+    ],
+    [
+     "Swiggy",
+     "Zomato"
+    ],
+    [
+     "Meme",
+     "GIF"
+    ],
+    [
+     "Netflix",
+     "Prime Video"
+    ],
+    [
+     "WhatsApp",
+     "Telegram"
+    ],
+    [
+     "Uber",
+     "Ola"
+    ],
+    [
+     "Spotify",
+     "JioSaavn"
+    ],
+    [
+     "Blinkit",
+     "Zepto"
+    ],
+    [
+     "Amazon",
+     "Flipkart"
+    ],
+    [
+     "Myntra",
+     "Nykaa"
+    ],
+    [
+     "Tinder",
+     "Bumble"
+    ],
+    [
+     "LinkedIn",
+     "Naukri"
+    ],
+    [
+     "QR code",
+     "Barcode"
+    ],
+    [
+     "Reels",
+     "Shorts"
+    ],
+    [
+     "Status",
+     "Story"
+    ],
+    [
+     "Emoji",
+     "Sticker"
+    ],
+    [
+     "Selfie",
+     "Photo dump"
+    ],
+    [
+     "Hashtag",
+     "Caption"
+    ],
+    [
+     "Influencer",
+     "YouTuber"
+    ],
+    [
+     "Podcast",
+     "Audiobook"
+    ],
+    [
+     "Google",
+     "ChatGPT"
+    ],
+    [
+     "Siri",
+     "Alexa"
+    ],
+    [
+     "Zoom",
+     "Google Meet"
+    ],
+    [
+     "Wi-Fi",
+     "Hotspot"
+    ],
+    [
+     "Password",
+     "OTP"
+    ],
+    [
+     "AirPods",
+     "Neckband"
+    ],
+    [
+     "iPhone",
+     "Samsung"
+    ],
+    [
+     "Laptop",
+     "iPad"
+    ],
+    [
+     "Charger",
+     "Power bank"
+    ],
+    [
+     "Ghosting",
+     "Blocking"
+    ],
+    [
+     "Vlog",
+     "Livestream"
+    ],
+    [
+     "PUBG",
+     "Free Fire"
+    ],
+    [
+     "Candy Crush",
+     "Subway Surfers"
+    ],
+    [
+     "Reddit",
+     "Quora"
+    ],
+    [
+     "Facebook",
+     "Twitter"
+    ],
+    [
+     "Dark mode",
+     "Silent mode"
+    ],
+    [
+     "Blue tick",
+     "Last seen"
+    ],
+    [
+     "Voice note",
+     "Video call"
+    ],
+    [
+     "Canva",
+     "Photoshop"
+    ],
+    [
+     "Binge-watch",
+     "Doomscroll"
+    ],
+    [
+     "Situationship",
+     "Talking stage"
+    ],
+    [
+     "Close friends",
+     "Finsta"
+    ],
+    [
+     "Main character",
+     "NPC"
+    ],
+    [
+     "Rizz",
+     "Aura"
+    ],
+    [
+     "Ring light",
+     "Tripod"
+    ],
+    [
+     "Screenshot",
+     "Screen recording"
+    ],
+    [
+     "Low battery",
+     "No network"
+    ]
+   ]
+  },
+  {
+   "id": "food",
+   "name": "Food",
+   "emoji": "🍕",
+   "blurb": "Hungry yet?",
+   "pairs": [
+    [
+     "Pizza",
+     "Burger"
+    ],
+    [
+     "Pasta",
+     "Maggi"
+    ],
+    [
+     "Momos",
+     "Spring rolls"
+    ],
+    [
+     "Cake",
+     "Brownie"
+    ],
+    [
+     "Doughnut",
+     "Muffin"
+    ],
+    [
+     "Kathi roll",
+     "Shawarma"
+    ],
+    [
+     "Popcorn",
+     "Nachos"
+    ],
+    [
+     "Mango",
+     "Papaya"
+    ],
+    [
+     "Orange",
+     "Lemon"
+    ],
+    [
+     "Strawberry",
+     "Cherry"
+    ],
+    [
+     "Pineapple",
+     "Coconut"
+    ],
+    [
+     "Onion",
+     "Garlic"
+    ],
+    [
+     "Carrot",
+     "Radish"
+    ],
+    [
+     "Cabbage",
+     "Lettuce"
+    ],
+    [
+     "Broccoli",
+     "Cauliflower"
+    ],
+    [
+     "Peas",
+     "Corn"
+    ],
+    [
+     "Honey",
+     "Jam"
+    ],
+    [
+     "Ketchup",
+     "Mayonnaise"
+    ],
+    [
+     "Milk",
+     "Curd"
+    ],
+    [
+     "Paneer",
+     "Tofu"
+    ],
+    [
+     "Salt",
+     "Sugar"
+    ],
+    [
+     "Pepper",
+     "Chilli"
+    ],
+    [
+     "Chicken",
+     "Fish"
+    ],
+    [
+     "Pancake",
+     "Waffle"
+    ],
+    [
+     "Sushi",
+     "Ramen"
+    ],
+    [
+     "Hakka noodles",
+     "Fried rice"
+    ],
+    [
+     "Manchurian",
+     "Chilli potato"
+    ],
+    [
+     "Coke",
+     "Sprite"
+    ],
+    [
+     "Iced tea",
+     "Lemonade"
+    ],
+    [
+     "Soup",
+     "Dal"
+    ],
+    [
+     "Salad",
+     "Raita"
+    ],
+    [
+     "Cornflakes",
+     "Oats"
+    ],
+    [
+     "KitKat",
+     "Dairy Milk"
+    ],
+    [
+     "Peanut butter",
+     "Nutella"
+    ],
+    [
+     "Kebab",
+     "Tikka"
+    ],
+    [
+     "McDonald's",
+     "KFC"
+    ],
+    [
+     "Domino's",
+     "Pizza Hut"
+    ],
+    [
+     "Starbucks",
+     "CCD"
+    ],
+    [
+     "Almonds",
+     "Cashews"
+    ],
+    [
+     "Jelly",
+     "Custard"
+    ],
+    [
+     "Frooti",
+     "Maaza"
+    ],
+    [
+     "Kurkure",
+     "Lays"
+    ],
+    [
+     "Red Bull",
+     "Sting"
+    ],
+    [
+     "Jaljeera",
+     "Aam panna"
+    ],
+    [
+     "Omelette",
+     "Bhurji"
+    ],
+    [
+     "Watermelon",
+     "Muskmelon"
+    ],
+    [
+     "Fries",
+     "Wedges"
+    ],
+    [
+     "Rusk",
+     "Marie biscuit"
+    ],
+    [
+     "Sandwich",
+     "Hot dog"
+    ]
+   ]
+  },
+  {
+   "id": "work",
+   "name": "College & Work Life",
+   "emoji": "💼",
+   "blurb": "Hostel to cubicle",
+   "pairs": [
+    [
+     "Hostel",
+     "PG"
+    ],
+    [
+     "Mess",
+     "Canteen"
+    ],
+    [
+     "Exam",
+     "Viva"
+    ],
+    [
+     "Assignment",
+     "Project"
+    ],
+    [
+     "Internship",
+     "Placement"
+    ],
+    [
+     "HOD",
+     "Dean"
+    ],
+    [
+     "Backlog",
+     "Attendance shortage"
+    ],
+    [
+     "Library",
+     "Lab"
+    ],
+    [
+     "Fest",
+     "Freshers"
+    ],
+    [
+     "Farewell",
+     "Convocation"
+    ],
+    [
+     "Roommate",
+     "Batchmate"
+    ],
+    [
+     "Bunk",
+     "Proxy"
+    ],
+    [
+     "CGPA",
+     "Percentage"
+    ],
+    [
+     "Notes",
+     "Textbook"
+    ],
+    [
+     "All-nighter",
+     "Group study"
+    ],
+    [
+     "Resume",
+     "Cover letter"
+    ],
+    [
+     "Interview",
+     "Group discussion"
+    ],
+    [
+     "Notice period",
+     "Probation"
+    ],
+    [
+     "Appraisal",
+     "Bonus"
+    ],
+    [
+     "Manager",
+     "Mentor"
+    ],
+    [
+     "HR",
+     "IT support"
+    ],
+    [
+     "Meeting",
+     "Presentation"
+    ],
+    [
+     "Stand-up",
+     "Town hall"
+    ],
+    [
+     "Deadline",
+     "Target"
+    ],
+    [
+     "Excel",
+     "PowerPoint"
+    ],
+    [
+     "Slack",
+     "Teams"
+    ],
+    [
+     "Reply all",
+     "Forward"
+    ],
+    [
+     "WFH",
+     "Sick leave"
+    ],
+    [
+     "Salary",
+     "Stipend"
+    ],
+    [
+     "Cubicle",
+     "Conference room"
+    ],
+    [
+     "Startup",
+     "MNC"
+    ],
+    [
+     "ASAP",
+     "EOD"
+    ],
+    [
+     "Offsite",
+     "Team lunch"
+    ],
+    [
+     "ID card",
+     "Lanyard"
+    ],
+    [
+     "Pantry",
+     "Cafeteria"
+    ],
+    [
+     "Boss",
+     "Client"
+    ],
+    [
+     "JEE",
+     "NEET"
+    ],
+    [
+     "CAT",
+     "UPSC"
+    ],
+    [
+     "Hackathon",
+     "Case competition"
+    ],
+    [
+     "Roll number",
+     "Employee ID"
+    ],
+    [
+     "Drop year",
+     "Gap year"
+    ],
+    [
+     "Layoff",
+     "Resignation"
+    ],
+    [
+     "Onboarding",
+     "Orientation"
+    ],
+    [
+     "Warden",
+     "Security guard"
+    ],
+    [
+     "Medical certificate",
+     "Leave application"
+    ],
+    [
+     "Post-it",
+     "Whiteboard"
+    ],
+    [
+     "Weekend",
+     "Holiday"
+    ],
+    [
+     "Hike",
+     "Promotion"
+    ]
+   ]
+  },
+  {
+   "id": "travel",
+   "name": "Travel",
+   "emoji": "✈️",
+   "blurb": "Bags packed",
+   "pairs": [
+    [
+     "Airport",
+     "Railway station"
+    ],
+    [
+     "Goa",
+     "Pondicherry"
+    ],
+    [
+     "Manali",
+     "Shimla"
+    ],
+    [
+     "Ladakh",
+     "Spiti"
+    ],
+    [
+     "Jaipur",
+     "Udaipur"
+    ],
+    [
+     "Ooty",
+     "Darjeeling"
+    ],
+    [
+     "Andaman",
+     "Maldives"
+    ],
+    [
+     "Dubai",
+     "Singapore"
+    ],
+    [
+     "Bali",
+     "Thailand"
+    ],
+    [
+     "London",
+     "New York"
+    ],
+    [
+     "Paris",
+     "Rome"
+    ],
+    [
+     "Tokyo",
+     "Seoul"
+    ],
+    [
+     "Passport",
+     "Visa"
+    ],
+    [
+     "Backpack",
+     "Suitcase"
+    ],
+    [
+     "Hotel",
+     "Airbnb"
+    ],
+    [
+     "Resort",
+     "Homestay"
+    ],
+    [
+     "Trekking",
+     "Camping"
+    ],
+    [
+     "Road trip",
+     "Train journey"
+    ],
+    [
+     "Cruise",
+     "Ferry"
+    ],
+    [
+     "Window seat",
+     "Middle seat"
+    ],
+    [
+     "Tatkal",
+     "Waiting list"
+    ],
+    [
+     "Keychain",
+     "Magnet"
+    ],
+    [
+     "Tour guide",
+     "Travel agent"
+    ],
+    [
+     "Scuba diving",
+     "Snorkelling"
+    ],
+    [
+     "Paragliding",
+     "Skydiving"
+    ],
+    [
+     "Taj Mahal",
+     "Red Fort"
+    ],
+    [
+     "Eiffel Tower",
+     "Burj Khalifa"
+    ],
+    [
+     "Duty free",
+     "Lounge"
+    ],
+    [
+     "Check-in",
+     "Boarding"
+    ],
+    [
+     "Neck pillow",
+     "Eye mask"
+    ],
+    [
+     "Metro",
+     "Local train"
+    ],
+    [
+     "Pilot",
+     "Cabin crew"
+    ],
+    [
+     "Lost luggage",
+     "Missed flight"
+    ],
+    [
+     "Waterfall",
+     "Hot spring"
+    ],
+    [
+     "Houseboat",
+     "Treehouse"
+    ],
+    [
+     "Vietnam",
+     "Sri Lanka"
+    ],
+    [
+     "Mussoorie",
+     "Nainital"
+    ],
+    [
+     "Coorg",
+     "Munnar"
+    ],
+    [
+     "Sleeper class",
+     "3AC"
+    ],
+    [
+     "OYO",
+     "Zostel"
+    ],
+    [
+     "Itinerary",
+     "Bucket list"
+    ],
+    [
+     "Bungee jumping",
+     "Zipline"
+    ],
+    [
+     "Self-drive car",
+     "Tempo traveller"
+    ]
+   ]
+  },
+  {
+   "id": "party",
+   "name": "Party",
+   "emoji": "🎉",
+   "blurb": "After dark",
+   "pairs": [
+    [
+     "Karaoke",
+     "Jam session"
+    ],
+    [
+     "Concert",
+     "Open mic"
+    ],
+    [
+     "Playlist",
+     "Radio"
+    ],
+    [
+     "Remix",
+     "Unplugged"
+    ],
+    [
+     "Beer",
+     "Wine"
+    ],
+    [
+     "Cocktail",
+     "Mocktail"
+    ],
+    [
+     "Tequila",
+     "Vodka"
+    ],
+    [
+     "Hangover",
+     "Jet lag"
+    ],
+    [
+     "Uno",
+     "Monopoly"
+    ],
+    [
+     "Jenga",
+     "Pictionary"
+    ],
+    [
+     "Housewarming",
+     "Baby shower"
+    ],
+    [
+     "Bonfire",
+     "Barbecue"
+    ],
+    [
+     "Rooftop",
+     "Poolside"
+    ],
+    [
+     "Nightclub",
+     "Pub"
+    ],
+    [
+     "Dress code",
+     "Guest list"
+    ],
+    [
+     "Disco ball",
+     "Fairy lights"
+    ],
+    [
+     "Sparkler",
+     "Party popper"
+    ],
+    [
+     "Photo booth",
+     "Polaroid"
+    ],
+    [
+     "Salsa",
+     "Hip hop"
+    ],
+    [
+     "Potluck",
+     "Buffet"
+    ],
+    [
+     "Sleepover",
+     "House party"
+    ],
+    [
+     "New Year",
+     "Halloween"
+    ],
+    [
+     "Brunch",
+     "Picnic"
+    ],
+    [
+     "Fancy dress",
+     "Cosplay"
+    ],
+    [
+     "Bowling",
+     "Arcade"
+    ],
+    [
+     "Escape room",
+     "Haunted house"
+    ],
+    [
+     "Movie night",
+     "Game night"
+    ],
+    [
+     "Bartender",
+     "Waiter"
+    ],
+    [
+     "Dance-off",
+     "Rap battle"
+    ],
+    [
+     "Secret Santa",
+     "Lucky draw"
+    ],
+    [
+     "Truth or Dare",
+     "Never Have I Ever"
+    ],
+    [
+     "Stag entry",
+     "Couple entry"
+    ],
+    [
+     "Ladies night",
+     "Happy hour"
+    ],
+    [
+     "Mafia",
+     "Among Us"
+    ],
+    [
+     "Sunburn",
+     "Lollapalooza"
+    ],
+    [
+     "Afterparty",
+     "Pregame"
+    ],
+    [
+     "Sangria",
+     "Mojito"
+    ],
+    [
+     "Plus one",
+     "Wingman"
+    ]
+   ]
+  }
+ ]
+}

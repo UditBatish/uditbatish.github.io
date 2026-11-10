@@ -16,6 +16,7 @@ export default defineConfig({
         'exp-nri': resolve(__dirname, 'experience/nri/index.html'),
         'exp-iit-delhi': resolve(__dirname, 'experience/iit-delhi/index.html'),
         'exp-st-johns': resolve(__dirname, 'experience/st-johns/index.html'),
+        'games-mrwhite': resolve(__dirname, 'Games/mrwhite/index.html'),
       },
     },
   },

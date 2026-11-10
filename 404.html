@@ -20,8 +20,10 @@
     .nf a { justify-self: center; display: inline-flex; align-items: center; height: 44px; padding: 0 20px; border-radius: 999px; border: 1px solid var(--line); font-weight: 500; }
   </style>
 </head>
-<!-- GitHub Pages serves this for any URL that doesn't exist. Plain and static (no JS). -->
+<!-- GitHub Pages serves this for any URL that doesn't exist. Plain and static, apart from one
+     redirect: URLs are case-sensitive here, so /games and /games/mrwhite (any casing) go to the game. -->
 <body class="theme-dark">
+  <script>if(/^\/games(\/(mrwhite\/?)?)?$/i.test(location.pathname))location.replace('/Games/mrwhite/'+location.search)</script>
   <main class="nf">
     <h1>Lost the <em>trail.</em></h1>
     <p>That page doesn't exist.</p>

@@ -1,0 +1,2 @@
+/* Standalone game page: no shared site styles, so the game owns the whole screen. */
+@import '../mrwhite.css';
